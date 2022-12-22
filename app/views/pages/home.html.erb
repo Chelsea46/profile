@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="bckgd">
+  <div class="container">
+    <h1 class="about-me">About me</h1>
+    <div class="text">
+      <%= image_tag "me2.jpg", class: "me" %>
+      <p>I'm Chelsea, an aspiring front end web developer based in Glasgow. I have recently graduated from Le wagon, which is the worlds leading coding bootcamp. Le Wagon has helped me grow more confident in my code, grasp a true understanding of frontend and backend, and solidified my decision of wanting to grow in the tech industry.</p>
+    </div>
+      <div class="button-div">
+        <%= button_to "Portfolio", portfolio_path, {:class => "btn", :method => :get} %>
+      </div>
+  </div>
+</div>
