@@ -10,9 +10,8 @@ header {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  max-width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
   background: #D6D6D6;
@@ -76,4 +75,21 @@ header {
 
 .ruby-link i{
   margin: 10px;
+}
+
+
+@media (min-width: 100px)
+ {
+ header{
+
+  width: 200px;
+ }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 700px) {
+ header{
+
+  width: 100px;
+ }
 }

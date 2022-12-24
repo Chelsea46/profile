@@ -37,3 +37,18 @@ body{
     border-color: transparent
   }
 }
+
+
+@media (min-width: 100px)
+ {
+  .typing-demo{
+    font-size: 1.5em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 992px) {
+  .typing-demo{
+    font-size: 2.5em;
+  }
+}
