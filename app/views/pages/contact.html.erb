@@ -13,15 +13,13 @@
 <script>
   function sendEmail() {
     Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "Chelsea.J.Roberts@hotmail.com",
-    Password : "",
-    To : 'Chelsea.J.Roberts@hotmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form Enquiry",
+    SecureToken : "a86cf1ac-5b54-4f7f-93e9-c511ccdfadb6",
+    To : 'chelsea.j.roberts@hotmail.com',
+    From : document.getElementById('email'),
+    Subject : "This is the subject",
     Body : "And this is the body"
-    }).then(
-     message => alert(message)
-    );
+}).then(
+  message => alert(message)
+);
   }
 </script>

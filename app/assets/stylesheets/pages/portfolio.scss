@@ -59,18 +59,6 @@ img {
   padding: 1rem;
 }
 
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
-
 .card {
   background-color: white;
   border-radius: 0.25rem;
@@ -80,6 +68,7 @@ img {
   overflow: hidden;
   border: 3px solid white;
   border-radius: 8px;
+  width: 400px;
 }
 
 .card_content {
@@ -103,4 +92,27 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
   font-weight: 400;
+}
+
+
+@media (max-device-width: 480px)
+and (orientation: portrait)
+ {
+  .card {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  }
+  .card_text{
+    font-size: 10px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-device-width: 768px) {
+  .card {
+    display: flex;
+    align-items: center;
+    width: 390px;
+  }
 }
