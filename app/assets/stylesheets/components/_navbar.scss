@@ -5,12 +5,12 @@
   border: 6px solid white;
 }
 
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  max-width: 300px;
   transition: all ease-in-out 0.5s;
   transition: all 0.5s;
   padding: 0 15px;
@@ -29,6 +29,21 @@ header {
 }
 
 #header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #EFA1A7;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.sideNav .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #EFA1A7;
@@ -77,19 +92,48 @@ header {
   margin: 10px;
 }
 
-
-@media (min-width: 100px)
- {
- header{
-
-  width: 200px;
- }
+.menubtn{
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 700px) {
- header{
+.sideNav{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.3 ease-in;
+  display: block;
+  padding-top: 60px;
+  left: -300px;
+   li{
+    list-style: none;
+  }
 
-  width: 100px;
- }
+}
+
+.closebtn{
+  position: absolute;
+}
+
+// @media (min-width: 1200px)
+// {
+//   .d-xl-none {
+//   display: none!important;
+// }
+// }
+
+@media (max-width: 1199px){
+  .menubtn{
+    display: flex;
+  }
+  #header {
+    left: -300px;
+  }
+  .sideNav{
+    display: block !important;
+    height: 31%;
+  }
 }

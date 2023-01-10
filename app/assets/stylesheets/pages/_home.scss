@@ -16,14 +16,17 @@ body{
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 3em;
   color: white;
+  left: 2%;
+  position: relative;
+  font-size: 2.5rem;
 }
 
 .blob{
   opacity:0.5;
-  left:27%;
   z-index: -1;
+  top: 0;
+
 }
 
 @keyframes typing {
@@ -39,16 +42,13 @@ body{
 }
 
 
-@media (min-width: 100px)
- {
-  .typing-demo{
-    font-size: 1.5em;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 992px) {
-  .typing-demo{
-    font-size: 2.5em;
-  }
+@media (max-width: 1199px){
+ .blob{
+  left: 24%;
+  top: 35%;
+ }
+ .typing-demo{
+  font-size: 15px;
+  top: -9%;
+ }
 }

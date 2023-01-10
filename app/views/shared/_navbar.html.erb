@@ -1,3 +1,4 @@
+<span class="menubtn" onclick="openNav()">&#9776;</span>
 <header id="header">
   <div class="d-flex flex-column">
     <div class="profile">
@@ -10,32 +11,68 @@
       </div>
     </div>
   </div>
-  <nav id="navbar" class="nav-menu navbar">
-   <ul>
-     <li>
-       <div class="ruby-link">
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li>
+          <div class="ruby-link">
+            <i class="fa-solid fa-house"></i>
+            <%= link_to "Home", root_path, class: "nav-link scrollto active" %>
+          </div>
+        </li>
+        <li>
+          <div class="ruby-link">
+            <i class="fa-solid fa-person-dress"></i>
+            <%= link_to "About", about_path, class: "nav-link scrollto" %>
+          </div>
+        </li>
+          <li>
+            <div class="ruby-link">
+              <i class="fa-solid fa-folder-open"></i>
+              <%= link_to "Portfolio", portfolio_path, class: "nav-link scrollto" %>
+            </div>
+          </li>
+        </ul>
+      </nav>
+</header>
+
+<%# Responsive side navbar %>
+<div class="sideNav" id="sidenav">
+  <a href="#" class="closebtn" onclick="closeNav()">&#10006;</a>
+  <div class="social-links mt-3 text-center">
+    <a href="https://github.com/Chelsea46" target="blank"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com/in/chelsea-roberts-2808881b2" target="blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <ul>
+    <li>
+      <div class="ruby-link">
         <i class="fa-solid fa-house"></i>
         <%= link_to "Home", root_path, class: "nav-link scrollto active" %>
-       </div>
-     </li>
-     <li>
-       <div class="ruby-link">
+      </div>
+    </li>
+    <li>
+      <div class="ruby-link">
         <i class="fa-solid fa-person-dress"></i>
         <%= link_to "About", about_path, class: "nav-link scrollto" %>
-       </div>
-     </li>
+      </div>
+    </li>
       <li>
         <div class="ruby-link">
           <i class="fa-solid fa-folder-open"></i>
           <%= link_to "Portfolio", portfolio_path, class: "nav-link scrollto" %>
         </div>
       </li>
-      <li>
-        <div class="ruby-link">
-          <i class="fa-solid fa-envelope"></i>
-          <%= link_to "Contact", contact_path, class: "nav-link scrollto" %>
-        </div>
-      </li>
+
     </ul>
-  </nav>
-</header>
+</div>
+
+<%# JS %>
+<script>
+function openNav() {
+  document.getElementById("sidenav").style.left = "0px";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.left = "-300px";
+}
+</script>
