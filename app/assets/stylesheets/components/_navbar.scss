@@ -43,20 +43,20 @@ header {
   transition: 0.3s;
 }
 
-.sideNav .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #EFA1A7;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
+// .sideNav .social-links a {
+//   font-size: 18px;
+//   display: inline-block;
+//   background: #EFA1A7;
+//   color: #fff;
+//   line-height: 1;
+//   padding: 8px 0;
+//   margin-right: 4px;
+//   border-radius: 50%;
+//   text-align: center;
+//   width: 36px;
+//   height: 36px;
+//   transition: 0.3s;
+// }
 
 .nav-menu {
   padding: 30px 0 0 0;
@@ -118,12 +118,6 @@ header {
   position: absolute;
 }
 
-// @media (min-width: 1200px)
-// {
-//   .d-xl-none {
-//   display: none!important;
-// }
-// }
 
 @media (max-width: 1199px){
   .menubtn{
@@ -134,6 +128,5 @@ header {
   }
   .sideNav{
     display: block !important;
-    height: 31%;
   }
 }
