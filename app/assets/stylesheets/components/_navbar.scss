@@ -108,6 +108,7 @@ header {
   display: block;
   padding-top: 60px;
   left: -300px;
+  background-color: #DDDED8;
    li{
     list-style: none;
   }
@@ -128,5 +129,6 @@ header {
   }
   .sideNav{
     display: block !important;
+    z-index: 1;
   }
 }

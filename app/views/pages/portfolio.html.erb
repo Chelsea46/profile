@@ -1,39 +1,113 @@
-<section>
-  <div class="p-container">
-    <h1>Porfolio</h1>
-    <ul class="cards">
-      <li class="cards_item">
+
+ <div class="main container dark:bg-neutral-900" id="main">
+  <div class="row justify-content-center">
+   <div class="col-12 cold-md-8 main-port">
+      <h2>Portfolio</h2>
+      <section class="cards">
         <div class="card">
-          <div class="card_image"><%= image_tag "spaceships.png" %></div>
-          <div class="card_content">
-            <h2 class="card_title">Goodbye Earth</h2>
-            <p class="card_text">A project created by myself and three other teammates during our "AirBnb clone week" at Le Wagon. This was our first time collaborating with one another, giving us the opportunity to experience work flow and the importance of communication. </p>
-            <a href="https://goodbye-heroku-planet.herokuapp.com/" target="blank" id="card-btn"><button class="btn card_btn">Link</button></a>
+          <div class="card__image-container">
+            <%= image_tag "spaceships.png" %>
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Goodbye Earth
+            </p>
+            <div class="card__info">
+              <p>A project created by myself and three other teammates during our "AirBnb clone week" at Le Wagon. This was our first time collaborating with one another, giving us the opportunity to experience work flow and the importance of communication.</p>
+               <a href="https://goodbye-heroku-planet.herokuapp.com/" target="blank" id="card-btn"><button class="btn card_btn">Link</button></a>
             <a href="https://github.com/rvmby/goodbye_earth/" target="blank" id="card-btn"><button class="btn card_btn">Code</button></a>
+            </div>
           </div>
         </div>
-      </li>
-      <li class="cards_item">
         <div class="card">
-          <div class="card_image"><%= image_tag "fresh-picks.png" %></div>
-          <div class="card_content">
-            <h2 class="card_title">Fresh Picks</h2>
-            <p class="card_text">Fresh Picks is a web app for climate concious people search for seasonal produce in the UK to keep their carbon footprint and costs down. The languages we implemented were HTML, SCSS, Bootstrap, Ruby, Ruby on Rails, JavaScript, Stimulis, SQL, as well as seeding our own database. </p>
-            <a href="https://www.fresh-picks.shop/" target="blank" id="card-btn"><button class="btn card_btn">Link</button></a>
+          <div class="card__image-container">
+            <%= image_tag "fresh-picks.png" %>
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Fresh Picks
+            </p>
+            <div class="card__info">
+              <p>Fresh Picks is a web app for climate concious people search for seasonal produce in the UK to keep their carbon footprint and costs down. The languages we implemented were HTML, SCSS, Bootstrap, Ruby, Ruby on Rails, JavaScript, Stimulis, SQL, as well as seeding our own database.</p>
+                <a href="https://www.fresh-picks.shop/" target="blank" id="card-btn"><button class="btn card_btn">Link</button></a>
             <a href="https://github.com/PerdiEdgePartington/fresh_picks/" target="blank" id="card-btn"><button class="btn card_btn">Code</button></a>
+            </div>
           </div>
         </div>
-      </li>
-      <li class="cards_item">
         <div class="card">
-          <div class="card_image"><%= image_tag "profile.png" %></div>
-          <div class="card_content">
-            <h2 class="card_title">Profile</h2>
-            <p class="card_text">My first project made on my lonesome after Le Wagon. The languages used were HTML, CSS, SCSS, Bootstrap, Ruby on Rails, JavaScript</p>
-            <a href="#" id="card-btn"><button class="btn card_btn">Link</button></a>
+          <div class="card__image-container">
+            <%= image_tag "profile.png" %>
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Profile 1
+            </p>
+            <div class="card__info">
+              <p>My first project made on my lonesome after Le Wagon. The languages used were HTML, CSS, SCSS, Bootstrap, Ruby on Rails, JavaScript</p>
+               <a href="#" id="card-btn"><button class="btn card_btn">Link</button></a>
             <a href="https://github.com/Chelsea46/profile" target="blank" id="card-btn"><button class="btn card_btn">Code</button></a>
+            </div>
           </div>
         </div>
-      </li>
+       </section>
+    </div>
   </div>
-</section>
+</div>
+    <script>
+      !(function() {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on"
+            ];
+            analytics.factory = function(t) {
+              return function() {
+                var e = Array.prototype.slice.call(arguments);
+                e.unshift(t);
+                analytics.push(e);
+                return analytics;
+              };
+            };
+            for (var t = 0; t < analytics.methods.length; t++) {
+              var e = analytics.methods[t];
+              analytics[e] = analytics.factory(e);
+            }
+            analytics.load = function(t, e) {
+              var n = document.createElement("script");
+              n.type = "text/javascript";
+              n.async = !0;
+              n.src =
+                "https://cdn.segment.com/analytics.js/v1/" +
+                t +
+                "/analytics.min.js";
+              var a = document.getElementsByTagName("script")[0];
+              a.parentNode.insertBefore(n, a);
+              analytics._loadOptions = e;
+            };
+            analytics.SNIPPET_VERSION = "4.1.0";
+            analytics.load("FQ5NJmRc6LrFKVAC6ofHlSU7WIwGAdj5");
+            analytics.page();
+          }
+      })();
+    </script>
