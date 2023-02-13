@@ -1,10 +1,152 @@
-<div class="wrapper">
-  <div class="blob position-absolute w-50">
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="#FA4D56" d="M49.9,-69C65,-57.7,77.7,-43.6,84.6,-26.5C91.5,-9.5,92.5,10.5,85.8,26.8C79,43.1,64.3,55.7,48.7,61C33.1,66.2,16.6,64.1,1.6,61.9C-13.4,59.6,-26.7,57.4,-41,51.7C-55.4,46.1,-70.7,37,-78,23.3C-85.2,9.6,-84.5,-8.8,-77.1,-23.1C-69.8,-37.3,-55.8,-47.4,-41.8,-59.1C-27.9,-70.7,-13.9,-83.9,1.7,-86.3C17.4,-88.7,34.8,-80.3,49.9,-69Z" transform="translate(100 100)" />
-    </svg>
-  </div>
-  <div class="typing-demo">
-    Full stack developer
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chelsea Roberts</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assests/me2.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Chelsea Roberts</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Junior Web Devloper</p>
+           <%= image_tag "me2.jpg", class: "intro__img" %>
+           <%# <img src="assests/me2.jpg" alt="" class="intro__img"> %>
+        </section>
+
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design</h3>
+                    <p>I strive to create beautiful and intuitive web apps, meaning I design with both aestetics and usability in mind. You will get your designs delivered as Figma files, as websites or both.</p>
+                </div> <!-- / service -->
+
+
+                <div class="service">
+                    <h3>Development</h3>
+                    <p>I am a versatile web developer with a speciality in Ruby on Rails, I also have a solid grip of the fundamentals of web development using HTML, CSS, and JavaScript.</p>
+                </div> <!-- / service -->
+
+                <!-- Add more services if you want -->
+
+            </div> <!-- / services -->
+
+            <a href="#work" class="btn">My Projects</a>
+        </section>
+
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Web Developer and cat lover from Glasgow</p>
+
+           <div class="about-me__body">
+               <p>I have recently completed a coding bootcamp with Le Wagon after falling in love with front end over a year ago. I have a keen eye to detail and am able to work amicably as part of a team, possessing a friendly attitude with quick learning abilities.</p>
+
+               <p> I can easily adapt to changing situations and collaborate with large groups of people without difficulties. I am organised, patient, and analytical with implacable interpersonal skills and excellent work ethic.</p>
+
+           </div>
+           <%= image_tag "2022-11-09 (2).png", class: "about-me__img" %>
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://www.fresh-picks.shop/" class="portfolio__item" target="_blank">
+                    <%= image_tag "fresh.png", class: "portfolio__img" %>
+                </a>
+
+                <!-- Portfolio item 02 -->
+                <a href="https://www.keeprunning.app/" class="portfolio__item" target="_blank">
+                    <%= image_tag "KeepRunning.png", class: "portfolio__img" %>
+                </a>
+
+
+                <!-- Portfolio item 03 -->
+                <a href="https://rubymovielist.herokuapp.com/" class="portfolio__item" target="_blank">
+                    <%= image_tag "spaceships.png", class: "portfolio__img" %>
+                </a>
+
+                <!-- Portfolio item 04 -->
+
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/meme-generator.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/personal-dashboard.png" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/experiences.png" alt="" class="portfolio__img">
+                </a>
+
+
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">chelsea.j.roberts@hotmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Chelsea46" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/chelsea-roberts-2808881b2/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
