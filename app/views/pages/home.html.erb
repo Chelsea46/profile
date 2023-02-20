@@ -49,14 +49,14 @@
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
-                    <h3>Design</h3>
-                    <p>I strive to create beautiful and intuitive web apps, meaning I design with both aestetics and usability in mind.</p>
+                    <h3>Human Skills</h3>
+                    <p>I strive to create a beautiful and enjoyable life, which includes Rock climbing, Hiking, Spoon Whitling, Art Galleries, and Cats</p>
                 </div> <!-- / service -->
 
 
                 <div class="service">
-                    <h3>Skills</h3>
-                    <p>I am a versatile web developer with knowledge of Ruby on Rails, MYSQL, APIs, Heroku, HTML, CSS, and JavaScript.</p>
+                    <h3>Technical Skills</h3>
+                    <p>I am a versatile web developer with knowledge of Ruby on Rails, MYSQL, APIs, Heroku, HTML, CSS, and JavaScript. With a very strong ablity to goolge</p>
                 </div> <!-- / service -->
 
                 <!-- Add more services if you want -->
@@ -82,47 +82,66 @@
         </section>
 
         <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My projects</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+           <section id="projects" class="projects sec-pad">
 
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://www.fresh-picks.shop/" class="portfolio__item" target="_blank">
-                    <%= image_tag "fresh.png", class: "portfolio__img" %>
-                </a>
-
-                <!-- Portfolio item 02 -->
-                <a href="https://www.keeprunning.app/" class="portfolio__item" target="_blank">
-                    <%= image_tag "KeepRunning.png", class: "portfolio__img" %>
-                </a>
+        <h2 class="section__title section__title--about">Projects</h2>
+          <p>
+            All my projects include links to the code and live version. Click the button to learn more about each one.
+          </p>
 
 
-                <!-- Portfolio item 03 -->
-                <a href="https://rubymovielist.herokuapp.com/" class="portfolio__item" target="_blank">
-                    <%= image_tag "spaceships.png", class: "portfolio__img" %>
-                </a>
-
-                <!-- Portfolio item 04 -->
-
-                <!-- Portfolio item 05 -->
-                <a href="https://main--genuine-nasturtium-44bc63.netlify.app/" class="portfolio__item" target="_blank">
-                    <%= image_tag "wizard.png", class: "portfolio__img" %>
-                </a>
-
-                <%# <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/personal-dashboard.png" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/experiences.png" alt="" class="portfolio__img">
-                </a> %>
-
-
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <%= image_tag "fresh-picks.png", class: "projects__row-img", loading:"lazy" %>
             </div>
-        </section>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Fresh Picks</h3>
+              <p class="projects__row-content-desc">
+                Fresh Picks is a website created by myself and 3 other teammates at Le Wagon. It is a website created with climate concious foodies in mind - select a month on the calendar and the website will take you to a page showing the fresh produce available in the UK during that Season. Select your favourite fruit or Veg, and be transported to a page full of recipes for that given produce! You can choose to add it to your favourites, where it'll then be stored in "Your Picks"
+              </p>
+              <a
+                href="fresh-picks.shop"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+             <%= image_tag "keeprunning.png", class: "projects__row-img", loading:"lazy" %>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Keep Running</h3>
+              <p class="projects__row-content-desc">
+                A website created by fellow Le Wagoners where I am assisting on making the website responsive. This web app is for runners wanting to be held accountable. Set bets against yourself and see if you're up for the challenge!
+              </p>
+              <a
+                href="https://www.keeprunning.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <%= image_tag "wizard (2).png", class: "projects__row-img", loading:"lazy" %>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Javaswift</h3>
+              <p class="projects__row-content-desc">
+                A website created using JS to battle good against evil. Who will triumph?
+              </p>
+              <a
+                href="https://javaswiftmonsters.netlify.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+    </section>
+
 
 
         <!-- Footer -->
