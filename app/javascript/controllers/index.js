@@ -20,3 +20,10 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+let myNumber = 0;
+for(let i=0; i < 9; i++){
+  myNumber = myNumber +1;
+}
+
+console.log(myNumber)
