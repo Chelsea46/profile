@@ -140,6 +140,9 @@ strong { font-weight: var(--fw-bold) }
     transition: transform 200ms ease-in-out;
 }
 
+.tech-skills{
+    text-align: left;
+}
 .btn:hover {
     transform: scale(1.1);
 }
